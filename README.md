@@ -8,3 +8,6 @@ React-Query는 React앱에서 비동기 로직을 쉽게 다루게 해주는 라
  Server State는 Client State와 완전 다르기 때문에 서버 상태에 대해서는 잘 작동하지 않았습니다. <br>
  또한 서버 데이터는 항상 최신 상태임을 보장하지 않고, 명시적으로 fetching을 수행해야만 최신 데이터로 전환됩니다. <br>
  네트워크 통신은 최소한으로 줄이는게 좋은데, 복수의 컴포넌트에서 최신 데이터를 받아오기 위해 fetching을 여러번 수행하는 낭비가 발생할 수도 있습니다.
+
+## json-server 사용하기
+https://redux-advanced.vlpt.us/3/01.html
