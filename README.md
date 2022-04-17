@@ -10,4 +10,4 @@ React-Query는 React앱에서 비동기 로직을 쉽게 다루게 해주는 라
  네트워크 통신은 최소한으로 줄이는게 좋은데, 복수의 컴포넌트에서 최신 데이터를 받아오기 위해 fetching을 여러번 수행하는 낭비가 발생할 수도 있습니다.
 
 ## json-server 사용하기
-https://redux-advanced.vlpt.us/3/01.html
+https://redux-advanced.vlpt.us/3/01.html 
