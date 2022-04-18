@@ -1,0 +1,52 @@
+{
+  "superheroes": [
+    { "id": 1, "name": "Batman", "alterEgo": "Bruce Wayne" },
+    { "id": 2, "name": "Spiderman", "alterEgo": "Peter Parker" },
+    { "id": 3, "name": "Ironman", "alterEgo": "Tony Stark" }
+  ],
+  "testCase2": [
+    { "id": 1, "name": "Batman2", "alterEgo": "Bruce Wayne" },
+    { "id": 2, "name": "Spiderman2", "alterEgo": "Peter Parker" },
+    { "id": 3, "name": "Ironman2", "alterEgo": "Tony Stark" }
+  ],
+  "testCase3": [
+    { "id": 1, "name": "Batman3", "alterEgo": "Bruce Wayne" },
+    { "id": 2, "name": "Spiderman3", "alterEgo": "Peter Parker" },
+    { "id": 3, "name": "Ironman3", "alterEgo": "Tony Stark" }
+  ],
+  "testCase4": [
+    { "id": 1, "name": "Batman4", "alterEgo": "Bruce Wayne" },
+    { "id": 2, "name": "Spiderman4", "alterEgo": "Peter Parker" },
+    { "id": 3, "name": "Ironman4", "alterEgo": "Tony Stark" }
+  ],
+  "testTotal": [
+    {
+      "superheroes": [
+        { "id": 1, "name": "Batman", "alterEgo": "Bruce Wayne" },
+        { "id": 2, "name": "Spiderman", "alterEgo": "Peter Parker" },
+        { "id": 3, "name": "Ironman", "alterEgo": "Tony Stark" }
+      ]
+    },
+    {
+      "testCase2": [
+        { "id": 1, "name": "Batman2", "alterEgo": "Bruce Wayne" },
+        { "id": 2, "name": "Spiderman2", "alterEgo": "Peter Parker" },
+        { "id": 3, "name": "Ironman2", "alterEgo": "Tony Stark" }
+      ]
+    },
+    {
+      "testCase3": [
+        { "id": 1, "name": "Batman3", "alterEgo": "Bruce Wayne" },
+        { "id": 2, "name": "Spiderman3", "alterEgo": "Peter Parker" },
+        { "id": 3, "name": "Ironman3", "alterEgo": "Tony Stark" }
+      ]
+    },
+    {
+      "testCase4": [
+        { "id": 1, "name": "Batman4", "alterEgo": "Bruce Wayne" },
+        { "id": 2, "name": "Spiderman4", "alterEgo": "Peter Parker" },
+        { "id": 3, "name": "Ironman4", "alterEgo": "Tony Stark" }
+      ]
+    }
+  ]
+}
