@@ -7,15 +7,24 @@ const fetchSuperHeros = () => {
 };
 
 const RQSuperHeroes = () => {
+  const onSuccess = () => {
+    console.log("perform side effect after data fetching");
+  };
+
+  const onError = () => {
+    console.log("perform side effect after encountering error");
+  };
+
   const { isLoading, data, isError, error, isFetching, refetch } = useQuery(
     "super-heroes",
     fetchSuperHeros,
     {
+      onSuccess,
+      onError,
+      // 데이터 렌더링 안되게끔 한다
       enabled: false,
     }
   );
-
-  //console.log(isLoading, data);
 
   if (isLoading) {
     return <h2>Loading....</h2>;
