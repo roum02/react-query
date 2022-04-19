@@ -22,7 +22,12 @@ const RQSuperHeroes = () => {
       onSuccess,
       onError,
       // 데이터 렌더링 안되게끔 한다
-      enabled: false,
+      //enabled: false,
+      select: (data) => {
+        const superHeroNames = data?.data.map((hero) => hero.name);
+        //return superHeroNames;
+        console.log(superHeroNames);
+      },
     }
   );
 
