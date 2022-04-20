@@ -1,10 +1,5 @@
-import axios from "axios";
 import React from "react";
-import { useQuery } from "react-query";
-
-const fetchSuperHeros = () => {
-  return axios.get("http://localhost:4000/superheroes");
-};
+import { useSuperHerosData } from "../hooks/useSuperHerosData";
 
 const RQSuperHeroes = () => {
   const onSuccess = () => {
@@ -15,21 +10,8 @@ const RQSuperHeroes = () => {
     console.log("perform side effect after encountering error");
   };
 
-  const { isLoading, data, isError, error, isFetching, refetch } = useQuery(
-    "super-heroes",
-    fetchSuperHeros,
-    {
-      onSuccess,
-      onError,
-      // 데이터 렌더링 안되게끔 한다
-      //enabled: false,
-      select: (data) => {
-        const superHeroNames = data?.data.map((hero) => hero.name);
-        //return superHeroNames;
-        console.log(superHeroNames);
-      },
-    }
-  );
+  const { isLoading, data, isError, error, isFetching, refetch } =
+    useSuperHerosData(onSuccess, onError);
 
   if (isLoading) {
     return <h2>Loading....</h2>;
@@ -43,9 +25,12 @@ const RQSuperHeroes = () => {
     <>
       <h2>RQ Super Heroes Page</h2>
       <button onClick={refetch}>Fetch heroes</button>
-      {data?.data.map((hero) => {
+      {/* {data?.data.map((hero) => {
         return <div key={hero.name}>{hero.name}</div>;
-      })}
+      })} */}
+      {data.map((heroName) => (
+        <div>{heroName}</div>
+      ))}
     </>
   );
 };
