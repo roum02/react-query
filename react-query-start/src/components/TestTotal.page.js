@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const TestTotal = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/testTotal")
+      .get('http://localhost:4000/testTotal')
       .then((res) => {
         setData(res.data);
       })
